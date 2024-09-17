@@ -3,7 +3,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-base-200">
+    <div className="navbar bg-base-200 px-5">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -74,7 +74,7 @@ const NavBar = () => {
       </div>
       <div className="navbar-end">
         <button className="px-4 py-2 rounded-md border border-neutral-300 bg-teal-600 text-white text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
-         Login
+          Login
         </button>
       </div>
     </div>
