@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const page = () => {
@@ -23,7 +24,7 @@ const page = () => {
         console.log(formData);
       };
     return (
-        <div className="font-[sans-serif]">
+        <div>
       <div className="min-h-screen flex flex-col items-center justify-center py-6 px-4">
         <div className="grid md:grid-cols-2 items-center gap-4 max-w-6xl w-full">
           <div className="border border-gray-300 rounded-lg p-6 max-w-md shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] max-md:mx-auto">
@@ -105,9 +106,9 @@ const page = () => {
 
               <p className="text-sm !mt-8 text-center text-gray-800">
                 Dont have an account?{' '}
-                <a href="#" className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap">
+                <Link href="register" className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap">
                   Register here
-                </a>
+                </Link>
               </p>
             </form>
           </div>
